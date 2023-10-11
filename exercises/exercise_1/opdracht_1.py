@@ -8,5 +8,9 @@ def likes(team: list) -> str:
         return "no one likes this"
     elif len(team) == 1:
         return team[0] + " likes this"
-    else:
+    elif len(team) == 2:
         return team[0] + " en " + team[1] + " like this"
+    else:
+        return team[0] + ", " + team[1] + " and " + team[2] + " like this"
+
+print(likes(["Koen", "Megan", "Tijmen"]))

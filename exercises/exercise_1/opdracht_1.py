@@ -10,5 +10,7 @@ def likes(team: list) -> str:
         return team[0] + " likes this"
     elif len(team) == 2:
         return team[0] + " en " + team[1] + " like this"
-    else:
+    elif len(team) == 3:
         return team[0] + ", " + team[1] + " and " + team[2] + " like this"
+    else:
+        return team[0] + ", " + team[1] + " and 2 others like this"

@@ -12,5 +12,3 @@ def likes(team: list) -> str:
         return team[0] + " en " + team[1] + " like this"
     else:
         return team[0] + ", " + team[1] + " and " + team[2] + " like this"
-
-print(likes(["Koen", "Megan", "Tijmen"]))
